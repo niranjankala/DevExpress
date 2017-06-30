@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DevExWinformsVB", "DevExWinformsVB\DevExWinformsVB.vbproj", "{D000C6FD-0570-4E44-8572-059B0CBAFF65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtraReportTreemap", "XtraReportTreemap\XtraReportTreemap.csproj", "{2A7DC1A9-197C-4FE9-9DCA-1C7544AB87E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramControl", "DiagramControl\DiagramControl.csproj", "{86584F33-4ECE-455E-BFDB-D2FAB2D2B987}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D000C6FD-0570-4E44-8572-059B0CBAFF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D000C6FD-0570-4E44-8572-059B0CBAFF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D000C6FD-0570-4E44-8572-059B0CBAFF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7DC1A9-197C-4FE9-9DCA-1C7544AB87E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7DC1A9-197C-4FE9-9DCA-1C7544AB87E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7DC1A9-197C-4FE9-9DCA-1C7544AB87E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7DC1A9-197C-4FE9-9DCA-1C7544AB87E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86584F33-4ECE-455E-BFDB-D2FAB2D2B987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86584F33-4ECE-455E-BFDB-D2FAB2D2B987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86584F33-4ECE-455E-BFDB-D2FAB2D2B987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86584F33-4ECE-455E-BFDB-D2FAB2D2B987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
