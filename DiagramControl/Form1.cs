@@ -1,4 +1,5 @@
 ﻿using DevExpress.Diagram.Core;
+using DevExpress.Diagram.Core.Layout;
 using DevExpress.XtraDiagram;
 using System;
 using System.Collections.Generic;
@@ -33,21 +34,38 @@ namespace DiagramControl
 
 
             Diagram diag = new Diagram();
+            diagramControl.Items.Clear();
+            List<DiagramItem> items = new List<DiagramItem>();
+            Point centerPoint = new Point(diagramControl.DisplayRectangle.Width / 2, diagramControl.DisplayRectangle.Height / 2);
 
+            int yStartPos = centerPoint.Y - ((150 * diag.Connections.Count) / 2);
+            for (int index = 0; index < diag.Connections.Count; index++)
+            {
+                Link link = diag.Connections[index];
+                DiagramShape diagramItem1 = new DiagramShape(BasicShapes.Ellipse, centerPoint.X - 200, yStartPos + ((index + 1) * 150), 200, 100);
+                diagramItem1.Content = link.Item1.Name;
+                diagramItem1.Appearance.BackColor = Color.FromArgb(240, 230, 140);
+                diagramItem1.Appearance.ForeColor = Color.White;
+                
+                    //diagramItem1.Shape.Id = link.Item1.Id;
+                //diagramItem1.Shape.Id = link.Item1.Id;
+
+                DiagramShape diagramItem2 = new DiagramShape(BasicShapes.Ellipse, centerPoint.X + 200, yStartPos + ((index + 1) * 150), 200, 100);
+                diagramItem2.Content = link.Item2.Name;
+                diagramItem2.Appearance.BackColor = Color.Gray;
+                diagramItem2.Appearance.ForeColor = Color.White;
+                DiagramConnector connector1 = new DiagramConnector(diagramItem1, diagramItem2);
+                diagramControl.Items.AddRange(diagramItem1, diagramItem2, connector1);
+            }
             foreach (Link link in diag.Connections)
             {
-                //ShapeDescription desc = new ShapeDescription()
-                ////DiagramShape diagramItem1 = new DiagramShape(BasicShapes.Rectangle, 10, 10, 200, 100);
-                ////diagramItem1.Shape.Id = link.Item1.Id;
-                ////diagramItem1.Shape.Id = link.Item1.Id;
+                //ShapeDescription desc = new ShapeDescription(link.Item1.Id, link.Item1.Name, )
 
-                //DiagramShape diagramItem2 = new DiagramShape(BasicShapes.Rectangle, 10, 10, 200, 100);
-                //DiagramConnector connector1 = new DiagramConnector(diagramItem1, diagramItem2);
-
-
+                   
             }
+            //diagramControl.ApplySugiyamaLayout(Direction.Down);
+            diagramControl.Refresh();
 
-            
             //diagramDataBindingController1.DataSource = diag.Items;
             //diagramDataBindingController1.ConnectorsSource = diag.Connections;
             //diagramDataBindingController1.ConnectorFromMember = "Item1";
@@ -64,17 +82,18 @@ namespace DiagramControl
         public Diagram()
         {
             Items = new List<Item>();
-            for (int i = 0; i < 5; i++)
-                Items.Add(new Item { Id = i, Name = "Item " + i });
             Connections = new List<Link>();
-            var rand = new Random();
-            for (int i = 0; i < 5; i++)
-                Connections.Add(new Link { Item1 = Items[rand.Next(0, Items.Count - 1)], Item2 = Items[rand.Next(0, Items.Count - 1)] });
-            Groups = new List<Group>();
-            for (int i = 0; i < 10; i++)
-                Groups.Add(new Group() { Name = "Group " + i });
-            foreach (var item in Items)
-                Groups[rand.Next(0, Groups.Count)].Items.Add(item);
+            //Create Air Loops             
+            int i = 0;
+            for (i = 0; i < 3; i++)
+                Items.Add(new Item { Id = i + 1, Name = "Air-" + (i + 1) });
+
+            //Create Zone HVAC Loops
+            for (int j = 0; j < i; j++)
+            {
+                Items.Add(new Item { Id = i + j, Name = "ZHG-" + (j + 1) });
+                Connections.Add(new Link { Item1 = Items[j], Item2 = Items[i + j] });
+            }
         }
     }
 
@@ -82,6 +101,7 @@ namespace DiagramControl
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public ItemType BldgItemType { get; set; }
     }
     public class Link
     {
