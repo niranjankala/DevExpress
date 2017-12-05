@@ -1,0 +1,28 @@
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web.webPages.razor>
+    <pages>
+      <namespaces>
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.Mvc')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.Mvc.UI')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Utils')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxTreeList')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxHtmlEditor')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxSpellChecker')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraCharts')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraCharts.Web')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraReports')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraReports.UI')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraReports.Web')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraReports.Web.DocumentViewer')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraPivotGrid')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Data.PivotGrid')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxPivotGrid')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.XtraScheduler')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.XtraScheduler.Native')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxScheduler')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxSpreadsheet')" />
+        <add xdt:Transform="Remove"  xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxRichEdit')" /> 
+      </namespaces>
+    </pages>
+  </system.web.webPages.razor>
+</configuration>

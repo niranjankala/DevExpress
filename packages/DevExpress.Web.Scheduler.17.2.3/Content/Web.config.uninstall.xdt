@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web>
+    <pages>
+      <controls>
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxScheduler')" />
+      </controls>
+    </pages>
+  </system.web>
+</configuration>

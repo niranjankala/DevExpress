@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web>
+    <pages xdt:Transform="InsertIfMissing">
+    </pages>
+  </system.web>
+  <system.web>
+    <pages>
+      <controls xdt:Transform="InsertIfMissing">
+      </controls>
+    </pages>
+  </system.web>
+  <system.web>
+    <pages>
+      <controls>
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.XtraCharts.Web')" />
+        <add xdt:Transform="Insert" tagPrefix="dx" namespace="DevExpress.XtraCharts.Web" assembly="DevExpress.XtraCharts.v17.2.Web, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      </controls>
+    </pages>
+  </system.web>
+</configuration>

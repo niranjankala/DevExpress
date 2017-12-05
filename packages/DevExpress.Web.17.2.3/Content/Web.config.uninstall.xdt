@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <sectionGroup xdt:Transform="Remove" xdt:Locator="Condition(@name='devExpress')" />
+  </configSections>
+
+  <system.web>
+    <httpModules>
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@name='ASPxHttpHandlerModule')" />
+    </httpModules>
+    <httpHandlers>
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@path='DX.ashx')" />
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@path='ASPxUploadProgressHandlerPage.ashx')" />
+    </httpHandlers>
+	<pages>
+      <controls>
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Data.Linq')" />
+        <add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web')" />
+		<add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxTreeList')" />
+		<add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxPivotGrid')" />
+		<add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxSpellChecker')" />
+		<add xdt:Transform="Remove" xdt:Locator="Condition(@namespace='DevExpress.Web.ASPxHtmlEditor')" />
+      </controls>
+    </pages>
+  </system.web>
+
+  <system.webServer>
+    <modules>
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@name='ASPxHttpHandlerModule')"/>
+    </modules>
+    <handlers>
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@name='ASPxHttpHandlerModule')" />
+      <add xdt:Transform="Remove" xdt:Locator="Condition(@name='ASPxUploadProgressHandler')" />
+    </handlers>
+  </system.webServer>
+</configuration>
