@@ -17,6 +17,20 @@
             for enjoyable, agile development.
         </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @Html.DevExpress().HyperLink(settings =>
+   {
+       settings.Name = "HyperLink";
+       settings.NavigateUrl = "#";
+       settings.Properties.Text = "Some Action";
+       settings.Properties.EnableClientSideAPI = true;
+       settings.Properties.ClientInstanceName = "HyperLink";
+       settings.Properties.ClientSideEvents.Click = "AddNew";
+   }).GetHtml()
+       
+
+
+
+
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
@@ -29,3 +43,8 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+<script type="text/javascript">
+    function AddNew(s, e) {
+        alert("link clicked");
+    }
+</script>
