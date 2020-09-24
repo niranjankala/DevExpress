@@ -1,1 +1,0 @@
-﻿$dte.ItemOperations.Navigate("https://www.devexpress.com/Support/")
