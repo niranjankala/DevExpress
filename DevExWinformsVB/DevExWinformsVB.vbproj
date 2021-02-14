@@ -49,75 +49,75 @@
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Charts.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Charts.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Data.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Data.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Office.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Office.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Pdf.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Pdf.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.PivotGrid.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.PivotGrid.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Printing.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Printing.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.RichEdit.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.RichEdit.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Utils.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Utils.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.Utils.v16.1.UI.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.Utils.v16.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraCharts.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraCharts.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraEditors.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraEditors.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraGauges.v16.1.Core.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraGauges.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraGrid.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraGrid.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraLayout.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraLayout.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraPrinting.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraPrinting.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraReports.v16.1.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraReports.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty Libraries\DevExpress\16.1.6\DevExpress.XtraReports.v16.1.Extensions.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\DevExpress\16.1.6\DevExpress.XtraReports.v16.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
