@@ -1,0 +1,34 @@
+﻿/* Left Panel */
+.filters-navbar .item,
+.filters-navbar ul.dxnb-content {
+    border-right: none;
+}
+
+.filters-navbar .item {
+    padding-left: 24px !important;
+}
+
+
+.frmMain {
+    max-width:1200px;
+}
+
+.frmLayout1{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.comboBoxDiv {
+    padding-bottom: 15px;
+    float: left;
+    width: 275px;
+}
+
+.tabpage-content-area {
+    max-width: 1200px;
+}
+
+
+/* Work Detail Tab */
+.grid-view .dxgvADT .dxgvADCC:first-of-type {
+    display: none;
+}
