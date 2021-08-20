@@ -53,6 +53,17 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=68.61.22.112,55450;Initial Catalog=2020BEAMSandbox;Persist Security I"& _ 
+            "nfo=False;User ID=BeamUser;Password=5yf8mSqqm!3fv6")>  _
+        Public ReadOnly Property BMI6ConnectionString() As String
+            Get
+                Return CType(Me("BMI6ConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
