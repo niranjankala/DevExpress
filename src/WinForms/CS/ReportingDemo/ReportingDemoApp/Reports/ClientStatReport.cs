@@ -13,5 +13,12 @@ namespace ReportingDemoApp.Reports
             InitializeComponent();
         }
 
+        private void ClientStatReport_DataSourceDemanded(object sender, EventArgs e)
+        {
+            if (this.Parameters?.Count > 0)
+            {
+
+            }
+        }
     }
 }
