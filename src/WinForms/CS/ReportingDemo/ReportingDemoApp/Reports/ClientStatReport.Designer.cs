@@ -104,6 +104,7 @@ namespace ReportingDemoApp.Reports
             DevExpress.XtraReports.Parameters.StaticListLookUpSettings staticListLookUpSettings3 = new DevExpress.XtraReports.Parameters.StaticListLookUpSettings();
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.startDate = new DevExpress.XtraReports.Parameters.Parameter();
             this.endDate = new DevExpress.XtraReports.Parameters.Parameter();
@@ -635,6 +636,7 @@ namespace ReportingDemoApp.Reports
             this.tableCell14.StylePriority.UseTextAlignment = false;
             this.tableCell14.Text = "Material Total";
             this.tableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.tableCell14.Visible = false;
             this.tableCell14.Weight = 0.08214516859788161D;
             // 
             // tableCell15
@@ -644,6 +646,7 @@ namespace ReportingDemoApp.Reports
             this.tableCell15.StylePriority.UseTextAlignment = false;
             this.tableCell15.Text = "Other Amount";
             this.tableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.tableCell15.Visible = false;
             this.tableCell15.Weight = 0.0850978264441857D;
             // 
             // Detail
@@ -787,6 +790,7 @@ namespace ReportingDemoApp.Reports
             this.tableCell27.StyleName = "DetailData1";
             this.tableCell27.StylePriority.UseTextAlignment = false;
             this.tableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.tableCell27.Visible = false;
             this.tableCell27.Weight = 0.08214516859788161D;
             // 
             // tableCell28
@@ -797,6 +801,7 @@ namespace ReportingDemoApp.Reports
             this.tableCell28.StyleName = "DetailData1";
             this.tableCell28.StylePriority.UseTextAlignment = false;
             this.tableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.tableCell28.Visible = false;
             this.tableCell28.Weight = 0.085097844050480764D;
             // 
             // GroupFooter1
@@ -847,7 +852,7 @@ namespace ReportingDemoApp.Reports
             // 
             this.label4.CanGrow = false;
             this.label4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([invtotal])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Sum([invtotal])")});
             this.label4.LocationFloat = new DevExpress.Utils.PointFloat(524.5044F, 3.4F);
             this.label4.Name = "label4";
             this.label4.SizeF = new System.Drawing.SizeF(16.78769F, 14.88444F);
@@ -888,10 +893,14 @@ namespace ReportingDemoApp.Reports
             // 
             // label6
             // 
+            this.label6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Sum([invtotal])")});
             this.label6.LocationFloat = new DevExpress.Utils.PointFloat(508.0044F, 11.5F);
             this.label6.Name = "label6";
             this.label6.SizeF = new System.Drawing.SizeF(16.5F, 14.88444F);
             this.label6.StyleName = "GrandTotalCaption1";
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.label6.Summary = xrSummary2;
             this.label6.Text = "SUM";
             // 
             // label7
@@ -904,8 +913,8 @@ namespace ReportingDemoApp.Reports
             this.label7.SizeF = new System.Drawing.SizeF(16.78769F, 14.88444F);
             this.label7.StyleName = "GrandTotalData1";
             this.label7.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.label7.Summary = xrSummary2;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.label7.Summary = xrSummary3;
             this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label7.TextFormatString = "{0:C2}";
             this.label7.WordWrap = false;
