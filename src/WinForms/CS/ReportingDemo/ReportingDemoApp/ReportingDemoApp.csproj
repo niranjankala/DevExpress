@@ -59,7 +59,9 @@
     <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -97,6 +99,12 @@
     <Compile Include="Reports\ClientStatReport.Designer.cs">
       <DependentUpon>ClientStatReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\SampleReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SampleReport.Designer.cs">
+      <DependentUpon>SampleReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="Reports\ClientStatReport.resx">
       <DependentUpon>ClientStatReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SampleReport.resx">
+      <DependentUpon>SampleReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

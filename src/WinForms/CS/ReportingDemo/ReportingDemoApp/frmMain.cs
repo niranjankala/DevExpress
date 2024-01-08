@@ -48,5 +48,13 @@ namespace ReportingDemoApp
             ReportPrintTool printTool = new ReportPrintTool(detailreport);
             printTool.ShowPreview();
         }
+
+        private void btnShowColumnChooserRpt_Click(object sender, EventArgs e)
+        {
+            T333639.SampleReport rpt = new T333639.SampleReport();
+            
+                rpt.ShowPreview();
+            
+        }
     }
 }

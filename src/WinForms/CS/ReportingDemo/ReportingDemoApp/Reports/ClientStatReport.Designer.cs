@@ -33,7 +33,7 @@ namespace ReportingDemoApp.Reports
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
@@ -55,7 +55,7 @@ namespace ReportingDemoApp.Reports
             DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
@@ -103,8 +103,6 @@ namespace ReportingDemoApp.Reports
             DevExpress.XtraReports.Parameters.StaticListLookUpSettings staticListLookUpSettings2 = new DevExpress.XtraReports.Parameters.StaticListLookUpSettings();
             DevExpress.XtraReports.Parameters.StaticListLookUpSettings staticListLookUpSettings3 = new DevExpress.XtraReports.Parameters.StaticListLookUpSettings();
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.startDate = new DevExpress.XtraReports.Parameters.Parameter();
             this.endDate = new DevExpress.XtraReports.Parameters.Parameter();
@@ -120,31 +118,27 @@ namespace ReportingDemoApp.Reports
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.label1 = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.table1 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.table2 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tblHeader = new DevExpress.XtraReports.UI.XRTable();
+            this.trHeader = new DevExpress.XtraReports.UI.XRTableRow();
+            this.thWorkOrderNumber = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thComplex = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thAssignment = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thEmpFirstName = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thEmpLastName = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thTotalLaborAmount = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thInvoiceDueDate = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thInvoicePaidDate = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thInvoiceDate = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thInvoiceAmount = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thMaterialTotal = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thOtherAmount = new DevExpress.XtraReports.UI.XRTableCell();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.table3 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tblDetails = new DevExpress.XtraReports.UI.XRTable();
+            this.trDetail = new DevExpress.XtraReports.UI.XRTableRow();
+            this.tdWorkOrderNumber = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tdComplex = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -159,13 +153,8 @@ namespace ReportingDemoApp.Reports
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.label2 = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupFooter2 = new DevExpress.XtraReports.UI.GroupFooterBand();
-            this.panel1 = new DevExpress.XtraReports.UI.XRPanel();
-            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.panel2 = new DevExpress.XtraReports.UI.XRPanel();
-            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
             this.label7 = new DevExpress.XtraReports.UI.XRLabel();
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.GroupCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -181,9 +170,14 @@ namespace ReportingDemoApp.Reports
             this.GrandTotalData1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.GrandTotalBackground1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
-            ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
+            this.tb = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            ((System.ComponentModel.ISupportInitialize)(this.tblHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // sqlDataSource1
@@ -191,36 +185,36 @@ namespace ReportingDemoApp.Reports
             this.sqlDataSource1.ConnectionName = "DefaultConnection";
             this.sqlDataSource1.Name = "sqlDataSource1";
             columnExpression1.ColumnName = "BillOfficeCode";
-            table4.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
-            table4.Name = "BillingOffice";
-            columnExpression1.Table = table4;
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
+            table1.Name = "BillingOffice";
+            columnExpression1.Table = table1;
             column1.Expression = columnExpression1;
             columnExpression2.ColumnName = "BillingOffice";
-            columnExpression2.Table = table4;
+            columnExpression2.Table = table1;
             column2.Expression = columnExpression2;
             columnExpression3.ColumnName = "Addr1";
-            columnExpression3.Table = table4;
+            columnExpression3.Table = table1;
             column3.Expression = columnExpression3;
             columnExpression4.ColumnName = "Addr2";
-            columnExpression4.Table = table4;
+            columnExpression4.Table = table1;
             column4.Expression = columnExpression4;
             columnExpression5.ColumnName = "City";
-            columnExpression5.Table = table4;
+            columnExpression5.Table = table1;
             column5.Expression = columnExpression5;
             columnExpression6.ColumnName = "State";
-            columnExpression6.Table = table4;
+            columnExpression6.Table = table1;
             column6.Expression = columnExpression6;
             columnExpression7.ColumnName = "ZipCode";
-            columnExpression7.Table = table4;
+            columnExpression7.Table = table1;
             column7.Expression = columnExpression7;
             columnExpression8.ColumnName = "Phone";
-            columnExpression8.Table = table4;
+            columnExpression8.Table = table1;
             column8.Expression = columnExpression8;
             columnExpression9.ColumnName = "Fax";
-            columnExpression9.Table = table4;
+            columnExpression9.Table = table1;
             column9.Expression = columnExpression9;
             columnExpression10.ColumnName = "Inactive";
-            columnExpression10.Table = table4;
+            columnExpression10.Table = table1;
             column10.Expression = columnExpression10;
             selectQuery1.Columns.Add(column1);
             selectQuery1.Columns.Add(column2);
@@ -233,59 +227,59 @@ namespace ReportingDemoApp.Reports
             selectQuery1.Columns.Add(column9);
             selectQuery1.Columns.Add(column10);
             selectQuery1.Name = "BillingOffice";
-            selectQuery1.Tables.Add(table4);
+            selectQuery1.Tables.Add(table1);
             columnExpression11.ColumnName = "Code";
-            table5.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"403\" />";
-            table5.Name = "Complex";
-            columnExpression11.Table = table5;
+            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"403\" />";
+            table2.Name = "Complex";
+            columnExpression11.Table = table2;
             column11.Expression = columnExpression11;
             columnExpression12.ColumnName = "Complex";
-            columnExpression12.Table = table5;
+            columnExpression12.Table = table2;
             column12.Expression = columnExpression12;
             columnExpression13.ColumnName = "City";
-            columnExpression13.Table = table5;
+            columnExpression13.Table = table2;
             column13.Expression = columnExpression13;
             columnExpression14.ColumnName = "State";
-            columnExpression14.Table = table5;
+            columnExpression14.Table = table2;
             column14.Expression = columnExpression14;
             columnExpression15.ColumnName = "ZipCode";
-            columnExpression15.Table = table5;
+            columnExpression15.Table = table2;
             column15.Expression = columnExpression15;
             columnExpression16.ColumnName = "Location";
-            columnExpression16.Table = table5;
+            columnExpression16.Table = table2;
             column16.Expression = columnExpression16;
             columnExpression17.ColumnName = "BillOfficeCode";
-            columnExpression17.Table = table5;
+            columnExpression17.Table = table2;
             column17.Expression = columnExpression17;
             columnExpression18.ColumnName = "ReferenceCode";
-            columnExpression18.Table = table5;
+            columnExpression18.Table = table2;
             column18.Expression = columnExpression18;
             columnExpression19.ColumnName = "WorkOrderRequired";
-            columnExpression19.Table = table5;
+            columnExpression19.Table = table2;
             column19.Expression = columnExpression19;
             columnExpression20.ColumnName = "NotToExceed";
-            columnExpression20.Table = table5;
+            columnExpression20.Table = table2;
             column20.Expression = columnExpression20;
             columnExpression21.ColumnName = "SplitterPageRequired";
-            columnExpression21.Table = table5;
+            columnExpression21.Table = table2;
             column21.Expression = columnExpression21;
             columnExpression22.ColumnName = "SplitterPageLocation";
-            columnExpression22.Table = table5;
+            columnExpression22.Table = table2;
             column22.Expression = columnExpression22;
             columnExpression23.ColumnName = "Comment";
-            columnExpression23.Table = table5;
+            columnExpression23.Table = table2;
             column23.Expression = columnExpression23;
             columnExpression24.ColumnName = "Inactive";
-            columnExpression24.Table = table5;
+            columnExpression24.Table = table2;
             column24.Expression = columnExpression24;
             columnExpression25.ColumnName = "recorddate";
-            columnExpression25.Table = table5;
+            columnExpression25.Table = table2;
             column25.Expression = columnExpression25;
             columnExpression26.ColumnName = "updatedate";
-            columnExpression26.Table = table5;
+            columnExpression26.Table = table2;
             column26.Expression = columnExpression26;
             columnExpression27.ColumnName = "updateby";
-            columnExpression27.Table = table5;
+            columnExpression27.Table = table2;
             column27.Expression = columnExpression27;
             selectQuery2.Columns.Add(column11);
             selectQuery2.Columns.Add(column12);
@@ -305,7 +299,7 @@ namespace ReportingDemoApp.Reports
             selectQuery2.Columns.Add(column26);
             selectQuery2.Columns.Add(column27);
             selectQuery2.Name = "Complex";
-            selectQuery2.Tables.Add(table5);
+            selectQuery2.Tables.Add(table2);
             storedProcQuery1.Name = "uspGetClientStatReportData";
             queryParameter1.Name = "@startDate";
             queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
@@ -444,7 +438,7 @@ namespace ReportingDemoApp.Reports
             // 
             // pageInfo2
             // 
-            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(325F, 0F);
+            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(577F, 0F);
             this.pageInfo2.Name = "pageInfo2";
             this.pageInfo2.SizeF = new System.Drawing.SizeF(325F, 23F);
             this.pageInfo2.StyleName = "PageInfo";
@@ -462,214 +456,179 @@ namespace ReportingDemoApp.Reports
             // 
             this.label1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(650F, 24.19433F);
+            this.label1.SizeF = new System.Drawing.SizeF(900F, 24.19433F);
             this.label1.StyleName = "Title";
             this.label1.Text = "Client Stat Report";
             // 
             // GroupHeader1
             // 
-            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table1});
             this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("BillingOffice", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader1.HeightF = 27F;
+            this.GroupHeader1.HeightF = 1.500003F;
             this.GroupHeader1.Level = 1;
             this.GroupHeader1.Name = "GroupHeader1";
-            // 
-            // table1
-            // 
-            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table1.Name = "table1";
-            this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow1});
-            this.table1.SizeF = new System.Drawing.SizeF(650F, 25F);
-            // 
-            // tableRow1
-            // 
-            this.tableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell1,
-            this.tableCell2});
-            this.tableRow1.Name = "tableRow1";
-            this.tableRow1.Weight = 1D;
-            // 
-            // tableCell1
-            // 
-            this.tableCell1.Name = "tableCell1";
-            this.tableCell1.StyleName = "GroupCaption1";
-            this.tableCell1.Text = "BILLING OFFICE";
-            this.tableCell1.Weight = 0.15234397301307093D;
-            // 
-            // tableCell2
-            // 
-            this.tableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillingOffice]")});
-            this.tableCell2.Name = "tableCell2";
-            this.tableCell2.StyleName = "GroupData1";
-            this.tableCell2.Weight = 0.84765606219951928D;
             // 
             // GroupHeader2
             // 
             this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table2});
+            this.tblHeader});
             this.GroupHeader2.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
             this.GroupHeader2.HeightF = 28F;
             this.GroupHeader2.Level = 2;
             this.GroupHeader2.Name = "GroupHeader2";
             // 
-            // table2
+            // tblHeader
             // 
-            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.table2.Name = "table2";
-            this.table2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow2});
-            this.table2.SizeF = new System.Drawing.SizeF(650F, 28F);
+            this.tblHeader.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.tblHeader.Name = "tblHeader";
+            this.tblHeader.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.trHeader});
+            this.tblHeader.SizeF = new System.Drawing.SizeF(900F, 28F);
             // 
-            // tableRow2
+            // trHeader
             // 
-            this.tableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell3,
-            this.tableCell4,
-            this.tableCell5,
-            this.tableCell6,
-            this.tableCell7,
-            this.tableCell8,
-            this.tableCell9,
-            this.tableCell10,
-            this.tableCell11,
+            this.trHeader.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.thWorkOrderNumber,
+            this.thComplex,
+            this.thAssignment,
+            this.thEmpFirstName,
+            this.thEmpLastName,
+            this.thTotalLaborAmount,
+            this.thInvoiceDueDate,
+            this.thInvoicePaidDate,
+            this.thInvoiceDate,
             this.tableCell12,
-            this.tableCell13,
-            this.tableCell14,
-            this.tableCell15});
-            this.tableRow2.Name = "tableRow2";
-            this.tableRow2.Weight = 1D;
+            this.thInvoiceAmount,
+            this.thMaterialTotal,
+            this.thOtherAmount});
+            this.trHeader.Name = "trHeader";
+            this.trHeader.Weight = 1D;
             // 
-            // tableCell3
+            // thWorkOrderNumber
             // 
-            this.tableCell3.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.tableCell3.Name = "tableCell3";
-            this.tableCell3.StyleName = "DetailCaption1";
-            this.tableCell3.StylePriority.UseBorders = false;
-            this.tableCell3.Text = "WORKORDER";
-            this.tableCell3.Weight = 0.085693693894606376D;
+            this.thWorkOrderNumber.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.thWorkOrderNumber.Name = "thWorkOrderNumber";
+            this.thWorkOrderNumber.StyleName = "DetailCaption1";
+            this.thWorkOrderNumber.StylePriority.UseBorders = false;
+            this.thWorkOrderNumber.Text = "Work Order Number";
+            this.thWorkOrderNumber.Weight = 0.085693693894606376D;
             // 
-            // tableCell4
+            // thComplex
             // 
-            this.tableCell4.Name = "tableCell4";
-            this.tableCell4.StyleName = "DetailCaption1";
-            this.tableCell4.Text = "Complex";
-            this.tableCell4.Weight = 0.058355930034930892D;
+            this.thComplex.Name = "thComplex";
+            this.thComplex.StyleName = "DetailCaption1";
+            this.thComplex.Text = "Complex";
+            this.thComplex.Weight = 0.058355930034930892D;
             // 
-            // tableCell5
+            // thAssignment
             // 
-            this.tableCell5.Name = "tableCell5";
-            this.tableCell5.StyleName = "DetailCaption1";
-            this.tableCell5.Text = "assignment Text";
-            this.tableCell5.Weight = 0.097614446786733769D;
+            this.thAssignment.Name = "thAssignment";
+            this.thAssignment.StyleName = "DetailCaption1";
+            this.thAssignment.Text = "Assignment Text";
+            this.thAssignment.Weight = 0.097614446786733769D;
             // 
-            // tableCell6
+            // thEmpFirstName
             // 
-            this.tableCell6.Name = "tableCell6";
-            this.tableCell6.StyleName = "DetailCaption1";
-            this.tableCell6.Text = "Emp First Name";
-            this.tableCell6.Weight = 0.094640790499173677D;
+            this.thEmpFirstName.Name = "thEmpFirstName";
+            this.thEmpFirstName.StyleName = "DetailCaption1";
+            this.thEmpFirstName.Text = "First Name";
+            this.thEmpFirstName.Weight = 0.094640790499173677D;
             // 
-            // tableCell7
+            // thEmpLastName
             // 
-            this.tableCell7.Name = "tableCell7";
-            this.tableCell7.StyleName = "DetailCaption1";
-            this.tableCell7.Text = "Emp Last Name";
-            this.tableCell7.Weight = 0.093454460730919467D;
+            this.thEmpLastName.Name = "thEmpLastName";
+            this.thEmpLastName.StyleName = "DetailCaption1";
+            this.thEmpLastName.Text = "Last Name";
+            this.thEmpLastName.Weight = 0.093454460730919467D;
             // 
-            // tableCell8
+            // thTotalLaborAmount
             // 
-            this.tableCell8.Name = "tableCell8";
-            this.tableCell8.StyleName = "DetailCaption1";
-            this.tableCell8.StylePriority.UseTextAlignment = false;
-            this.tableCell8.Text = "TOTLabor Amount";
-            this.tableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell8.Weight = 0.10768514779897837D;
+            this.thTotalLaborAmount.Name = "thTotalLaborAmount";
+            this.thTotalLaborAmount.StyleName = "DetailCaption1";
+            this.thTotalLaborAmount.StylePriority.UseTextAlignment = false;
+            this.thTotalLaborAmount.Text = "Labor Amount";
+            this.thTotalLaborAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.thTotalLaborAmount.Weight = 0.10768514779897837D;
             // 
-            // tableCell9
+            // thInvoiceDueDate
             // 
-            this.tableCell9.Name = "tableCell9";
-            this.tableCell9.StyleName = "DetailCaption1";
-            this.tableCell9.Text = "DATEDUE";
-            this.tableCell9.Weight = 0.064888563889723555D;
+            this.thInvoiceDueDate.Name = "thInvoiceDueDate";
+            this.thInvoiceDueDate.StyleName = "DetailCaption1";
+            this.thInvoiceDueDate.Text = "Invoice Due Date";
+            this.thInvoiceDueDate.Weight = 0.064888563889723555D;
             // 
-            // tableCell10
+            // thInvoicePaidDate
             // 
-            this.tableCell10.Name = "tableCell10";
-            this.tableCell10.StyleName = "DetailCaption1";
-            this.tableCell10.Text = "DATEPAID";
-            this.tableCell10.Weight = 0.067862220177283647D;
+            this.thInvoicePaidDate.Name = "thInvoicePaidDate";
+            this.thInvoicePaidDate.StyleName = "DetailCaption1";
+            this.thInvoicePaidDate.Text = "Invoice Paid Date";
+            this.thInvoicePaidDate.Weight = 0.067862220177283647D;
             // 
-            // tableCell11
+            // thInvoiceDate
             // 
-            this.tableCell11.Name = "tableCell11";
-            this.tableCell11.StyleName = "DetailCaption1";
-            this.tableCell11.Text = "INVDATE";
-            this.tableCell11.Weight = 0.060132810152493991D;
+            this.thInvoiceDate.Name = "thInvoiceDate";
+            this.thInvoiceDate.StyleName = "DetailCaption1";
+            this.thInvoiceDate.Text = "Invoice Date";
+            this.thInvoiceDate.Weight = 0.060132810152493991D;
             // 
             // tableCell12
             // 
             this.tableCell12.Name = "tableCell12";
             this.tableCell12.StyleName = "DetailCaption1";
             this.tableCell12.StylePriority.UseTextAlignment = false;
-            this.tableCell12.Text = "amtdue";
+            this.tableCell12.Text = "Invoice Due Amount";
             this.tableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell12.Weight = 0.051217070359450119D;
             // 
-            // tableCell13
+            // thInvoiceAmount
             // 
-            this.tableCell13.Name = "tableCell13";
-            this.tableCell13.StyleName = "DetailCaption1";
-            this.tableCell13.StylePriority.UseTextAlignment = false;
-            this.tableCell13.Text = "invtotal";
-            this.tableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell13.Weight = 0.051211847158578724D;
+            this.thInvoiceAmount.Name = "thInvoiceAmount";
+            this.thInvoiceAmount.StyleName = "DetailCaption1";
+            this.thInvoiceAmount.StylePriority.UseTextAlignment = false;
+            this.thInvoiceAmount.Text = "Invoice Amount";
+            this.thInvoiceAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.thInvoiceAmount.Weight = 0.051211847158578724D;
             // 
-            // tableCell14
+            // thMaterialTotal
             // 
-            this.tableCell14.Name = "tableCell14";
-            this.tableCell14.StyleName = "DetailCaption1";
-            this.tableCell14.StylePriority.UseTextAlignment = false;
-            this.tableCell14.Text = "Material Total";
-            this.tableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell14.Visible = false;
-            this.tableCell14.Weight = 0.08214516859788161D;
+            this.thMaterialTotal.Name = "thMaterialTotal";
+            this.thMaterialTotal.StyleName = "DetailCaption1";
+            this.thMaterialTotal.StylePriority.UseTextAlignment = false;
+            this.thMaterialTotal.Text = "Material Total";
+            this.thMaterialTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.thMaterialTotal.Weight = 0.08214516859788161D;
             // 
-            // tableCell15
+            // thOtherAmount
             // 
-            this.tableCell15.Name = "tableCell15";
-            this.tableCell15.StyleName = "DetailCaption1";
-            this.tableCell15.StylePriority.UseTextAlignment = false;
-            this.tableCell15.Text = "Other Amount";
-            this.tableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell15.Visible = false;
-            this.tableCell15.Weight = 0.0850978264441857D;
+            this.thOtherAmount.Name = "thOtherAmount";
+            this.thOtherAmount.StyleName = "DetailCaption1";
+            this.thOtherAmount.StylePriority.UseTextAlignment = false;
+            this.thOtherAmount.Text = "Other Amount";
+            this.thOtherAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.thOtherAmount.Weight = 0.0850978264441857D;
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table3});
+            this.tblDetails});
             this.Detail.HeightF = 25F;
             this.Detail.Name = "Detail";
             // 
-            // table3
+            // tblDetails
             // 
-            this.table3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.table3.Name = "table3";
-            this.table3.OddStyleName = "DetailData3_Odd";
-            this.table3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow3});
-            this.table3.SizeF = new System.Drawing.SizeF(650F, 25F);
+            this.tblDetails.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.tblDetails.Name = "tblDetails";
+            this.tblDetails.OddStyleName = "DetailData3_Odd";
+            this.tblDetails.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.trDetail});
+            this.tblDetails.SizeF = new System.Drawing.SizeF(900F, 25F);
             // 
-            // tableRow3
+            // trDetail
             // 
-            this.tableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell16,
-            this.tableCell17,
+            this.trDetail.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.tdWorkOrderNumber,
+            this.tdComplex,
             this.tableCell18,
             this.tableCell19,
             this.tableCell20,
@@ -681,26 +640,26 @@ namespace ReportingDemoApp.Reports
             this.tableCell26,
             this.tableCell27,
             this.tableCell28});
-            this.tableRow3.Name = "tableRow3";
-            this.tableRow3.Weight = 11.5D;
+            this.trDetail.Name = "trDetail";
+            this.trDetail.Weight = 11.5D;
             // 
-            // tableCell16
+            // tdWorkOrderNumber
             // 
-            this.tableCell16.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.tableCell16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.tdWorkOrderNumber.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.tdWorkOrderNumber.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[WORKORDER]")});
-            this.tableCell16.Name = "tableCell16";
-            this.tableCell16.StyleName = "DetailData1";
-            this.tableCell16.StylePriority.UseBorders = false;
-            this.tableCell16.Weight = 0.085693693894606376D;
+            this.tdWorkOrderNumber.Name = "tdWorkOrderNumber";
+            this.tdWorkOrderNumber.StyleName = "DetailData1";
+            this.tdWorkOrderNumber.StylePriority.UseBorders = false;
+            this.tdWorkOrderNumber.Weight = 0.085693693894606376D;
             // 
-            // tableCell17
+            // tdComplex
             // 
-            this.tableCell17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.tdComplex.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Complex]")});
-            this.tableCell17.Name = "tableCell17";
-            this.tableCell17.StyleName = "DetailData1";
-            this.tableCell17.Weight = 0.058355930034930892D;
+            this.tdComplex.Name = "tdComplex";
+            this.tdComplex.StyleName = "DetailData1";
+            this.tdComplex.Weight = 0.058355930034930892D;
             // 
             // tableCell18
             // 
@@ -790,7 +749,6 @@ namespace ReportingDemoApp.Reports
             this.tableCell27.StyleName = "DetailData1";
             this.tableCell27.StylePriority.UseTextAlignment = false;
             this.tableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell27.Visible = false;
             this.tableCell27.Weight = 0.08214516859788161D;
             // 
             // tableCell28
@@ -801,7 +759,6 @@ namespace ReportingDemoApp.Reports
             this.tableCell28.StyleName = "DetailData1";
             this.tableCell28.StylePriority.UseTextAlignment = false;
             this.tableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell28.Visible = false;
             this.tableCell28.Weight = 0.085097844050480764D;
             // 
             // GroupFooter1
@@ -817,62 +774,17 @@ namespace ReportingDemoApp.Reports
             this.label2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.label2.Name = "label2";
-            this.label2.SizeF = new System.Drawing.SizeF(650F, 2.08F);
+            this.label2.SizeF = new System.Drawing.SizeF(900F, 2.08F);
             this.label2.StyleName = "GroupFooterBackground3";
             this.label2.StylePriority.UseBorders = false;
             // 
             // GroupFooter2
             // 
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.panel1});
-            this.GroupFooter2.HeightF = 56.16888F;
+            this.tb});
+            this.GroupFooter2.HeightF = 25F;
             this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label3,
-            this.label4,
-            this.label5});
-            this.panel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.panel1.Name = "panel1";
-            this.panel1.SizeF = new System.Drawing.SizeF(650F, 56.16888F);
-            this.panel1.StyleName = "TotalBackground1";
-            // 
-            // label3
-            // 
-            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(508.0044F, 3.4F);
-            this.label3.Name = "label3";
-            this.label3.SizeF = new System.Drawing.SizeF(16.5F, 14.88444F);
-            this.label3.StyleName = "TotalCaption1";
-            this.label3.Text = "SUM";
-            // 
-            // label4
-            // 
-            this.label4.CanGrow = false;
-            this.label4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Sum([invtotal])")});
-            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(524.5044F, 3.4F);
-            this.label4.Name = "label4";
-            this.label4.SizeF = new System.Drawing.SizeF(16.78769F, 14.88444F);
-            this.label4.StyleName = "TotalData1";
-            this.label4.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label4.Summary = xrSummary1;
-            this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label4.TextFormatString = "{0:C2}";
-            this.label4.WordWrap = false;
-            // 
-            // label5
-            // 
-            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 29.78444F);
-            this.label5.Name = "label5";
-            this.label5.SizeF = new System.Drawing.SizeF(650F, 14.88444F);
-            this.label5.StyleName = "TotalCaption1";
-            this.label5.StylePriority.UseTextAlignment = false;
-            this.label5.Text = "BillingOffice [BillingOffice]";
-            this.label5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // ReportFooter
             // 
@@ -884,24 +796,11 @@ namespace ReportingDemoApp.Reports
             // panel2
             // 
             this.panel2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label6,
             this.label7});
             this.panel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.panel2.Name = "panel2";
-            this.panel2.SizeF = new System.Drawing.SizeF(650F, 49.38444F);
+            this.panel2.SizeF = new System.Drawing.SizeF(900F, 49.38444F);
             this.panel2.StyleName = "GrandTotalBackground1";
-            // 
-            // label6
-            // 
-            this.label6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Sum([invtotal])")});
-            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(508.0044F, 11.5F);
-            this.label6.Name = "label6";
-            this.label6.SizeF = new System.Drawing.SizeF(16.5F, 14.88444F);
-            this.label6.StyleName = "GrandTotalCaption1";
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.label6.Summary = xrSummary2;
-            this.label6.Text = "SUM";
             // 
             // label7
             // 
@@ -913,8 +812,8 @@ namespace ReportingDemoApp.Reports
             this.label7.SizeF = new System.Drawing.SizeF(16.78769F, 14.88444F);
             this.label7.StyleName = "GrandTotalData1";
             this.label7.StylePriority.UseTextAlignment = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.label7.Summary = xrSummary3;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.label7.Summary = xrSummary1;
             this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label7.TextFormatString = "{0:C2}";
             this.label7.WordWrap = false;
@@ -1060,6 +959,42 @@ namespace ReportingDemoApp.Reports
             this.PageInfo.Name = "PageInfo";
             this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
             // 
+            // tb
+            // 
+            this.tb.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.tb.Name = "tb";
+            this.tb.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.tb.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow1});
+            this.tb.SizeF = new System.Drawing.SizeF(900F, 25F);
+            // 
+            // xrTableRow1
+            // 
+            this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell1,
+            this.xrTableCell2,
+            this.xrTableCell3});
+            this.xrTableRow1.Name = "xrTableRow1";
+            this.xrTableRow1.Weight = 1D;
+            // 
+            // xrTableCell1
+            // 
+            this.xrTableCell1.Multiline = true;
+            this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.Weight = 1D;
+            // 
+            // xrTableCell2
+            // 
+            this.xrTableCell2.Multiline = true;
+            this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.Weight = 1D;
+            // 
+            // xrTableCell3
+            // 
+            this.xrTableCell3.Multiline = true;
+            this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Weight = 1D;
+            // 
             // ClientStatReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1077,6 +1012,10 @@ namespace ReportingDemoApp.Reports
             this.DataMember = "uspGetClientStatReportData";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
+            this.Landscape = true;
+            this.Margins = new DevExpress.Drawing.DXMargins(100F, 98F, 100F, 100F);
+            this.PageHeight = 850;
+            this.PageWidth = 1100;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.searchBy, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.startDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -1110,9 +1049,10 @@ namespace ReportingDemoApp.Reports
             this.PageInfo});
             this.Version = "22.2";
             this.DataSourceDemanded += new System.EventHandler<System.EventArgs>(this.ClientStatReport_DataSourceDemanded);
-            ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table3)).EndInit();
+            this.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.ClientStatReport_BeforePrint);
+            ((System.ComponentModel.ISupportInitialize)(this.tblHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1134,31 +1074,27 @@ namespace ReportingDemoApp.Reports
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
-        private DevExpress.XtraReports.UI.XRTable table1;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell2;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
-        private DevExpress.XtraReports.UI.XRTable table2;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow2;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell3;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell4;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell6;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell7;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell8;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell9;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell10;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell11;
+        private DevExpress.XtraReports.UI.XRTable tblHeader;
+        private DevExpress.XtraReports.UI.XRTableRow trHeader;
+        private DevExpress.XtraReports.UI.XRTableCell thWorkOrderNumber;
+        private DevExpress.XtraReports.UI.XRTableCell thComplex;
+        private DevExpress.XtraReports.UI.XRTableCell thAssignment;
+        private DevExpress.XtraReports.UI.XRTableCell thEmpFirstName;
+        private DevExpress.XtraReports.UI.XRTableCell thEmpLastName;
+        private DevExpress.XtraReports.UI.XRTableCell thTotalLaborAmount;
+        private DevExpress.XtraReports.UI.XRTableCell thInvoiceDueDate;
+        private DevExpress.XtraReports.UI.XRTableCell thInvoicePaidDate;
+        private DevExpress.XtraReports.UI.XRTableCell thInvoiceDate;
         private DevExpress.XtraReports.UI.XRTableCell tableCell12;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell13;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell14;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell15;
+        private DevExpress.XtraReports.UI.XRTableCell thInvoiceAmount;
+        private DevExpress.XtraReports.UI.XRTableCell thMaterialTotal;
+        private DevExpress.XtraReports.UI.XRTableCell thOtherAmount;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.XRTable table3;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow3;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell16;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell17;
+        private DevExpress.XtraReports.UI.XRTable tblDetails;
+        private DevExpress.XtraReports.UI.XRTableRow trDetail;
+        private DevExpress.XtraReports.UI.XRTableCell tdWorkOrderNumber;
+        private DevExpress.XtraReports.UI.XRTableCell tdComplex;
         private DevExpress.XtraReports.UI.XRTableCell tableCell18;
         private DevExpress.XtraReports.UI.XRTableCell tableCell19;
         private DevExpress.XtraReports.UI.XRTableCell tableCell20;
@@ -1173,13 +1109,8 @@ namespace ReportingDemoApp.Reports
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
         private DevExpress.XtraReports.UI.XRLabel label2;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter2;
-        private DevExpress.XtraReports.UI.XRPanel panel1;
-        private DevExpress.XtraReports.UI.XRLabel label3;
-        private DevExpress.XtraReports.UI.XRLabel label4;
-        private DevExpress.XtraReports.UI.XRLabel label5;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRPanel panel2;
-        private DevExpress.XtraReports.UI.XRLabel label6;
         private DevExpress.XtraReports.UI.XRLabel label7;
         private DevExpress.XtraReports.UI.XRControlStyle Title;
         private DevExpress.XtraReports.UI.XRControlStyle GroupCaption1;
@@ -1195,5 +1126,10 @@ namespace ReportingDemoApp.Reports
         private DevExpress.XtraReports.UI.XRControlStyle GrandTotalData1;
         private DevExpress.XtraReports.UI.XRControlStyle GrandTotalBackground1;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
+        private DevExpress.XtraReports.UI.XRTable tb;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
     }
 }
